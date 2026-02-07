@@ -1,7 +1,6 @@
   # Stanford Code in Place 2025 - Section Leader Repository
 
-Hello! I'm **Eesha Tariq**, the **Section Leader** for **Stanford Code in Place 2025**. This repository is created for my section to organize and share all course-related content, assignments, and resources. I’m excited to work with all of you as we dive into the fundamentals of computer programming!
-
+Hello! I’m Eesha Tariq, a Section Leader for **Stanford Code in Place 2025**. I **taught** Python to Stanford students from 11 different countries as part of a global learning program.
 ---
 
 ## 🎓 What is **Stanford's Code in Place**?
