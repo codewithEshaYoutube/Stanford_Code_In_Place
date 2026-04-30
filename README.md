@@ -1,4 +1,4 @@
-  # Stanford Code in Place 2025 - Section Leader ( Teaching )
+  # Stanford Code in Place 2025 , 2026 - Section Leader ( Teaching )
 
 
 <small><i>
