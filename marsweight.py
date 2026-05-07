@@ -2,34 +2,32 @@
 Prompts the user for a weight on Earth
 and prints the equivalent weight on Mars.
 """
-
-
-
-"""
-37.8/100=0.378
-constant
-input (str)- float    -formula-> mars_weight->  print
-
-"""
-MARS_CONSTANT=0.378
+'''
+mars_constant =0.387
+ask input user (weight on earth)
+storing the answer from user
+changing data type of answer str--->float
+define formula     mars constant multiply with input
+round off to 2 decimal points
+show up the mars_weight
+'''
 def main():
-    earth_weight_str=(input("Enter a weight on Earth: "))
-    earth_weight=float(earth_weight_str) #typecasting
-    
+ 
 
-# 3.57687 -> 3.57
-    mars_weight= MARS_CONSTANT* earth_weight
-    rounded_earth_weight=round(mars_weight,2)
-    
+# CONSTANT
+    MARS_MULTIPLE=0.378
 
-    print(f"The equivalent weight on Mars: {rounded_earth_weight}") #concatenat
+    #getting input from user and stored
+    Earth_weight=input('Enter a weight on Earth:')
+    # typecasting
+    Earth_weight_float=float(Earth_weight)
+    # defining formula
+    Mars_weight= MARS_MULTIPLE * Earth_weight_float
+    # round it off
+    Mars_weight_rounded=round(Mars_weight,2)
+    # show to user
+    print("The equivalent weight on Mars: ", Mars_weight_rounded)
 
-
-
-
-
-    
-    
 
 if __name__ == "__main__":
     main()
