@@ -1,41 +1,47 @@
 import random
+"""
+step 1 comp random num hidden
+        hint number
+step 2 input from user
+step 3 decide by if else statements wrong or right
+step 4 adding score or not
+step 5 repeating loop 5 times
 
-NUM_ROUNDS = 5
-#constant
+
+
 """
-1.assign random to computer and generate random num for user,print "your num"
-2.user to respond higher or lower{code?}
-3.build logic incorrect correct
-4.for loop 5 times
-5.scoring update + final msg
-"""
+
+NUM_ROUNDS=5
 def main():
+    score=0
     print("Welcome to the High-Low Game!")
-    print('--------------------------------')
-    #4milestone
-    your_score=0
-    for i in range (NUM_ROUNDS):
-        print(f"Round {i+1}")
-        #1milestone
-        comp_num=random.randint(1,100)
-        your_num=random.randint(1,100)
-        print(f"Your number is {your_num}")
-        #2milestone
-        user_choice=input("Do you think your number is higher or lower than the computer's?: ")
-        
-        #3milestone
-        higher_correct=user_choice=="higher"and your_num>comp_num
-        lower_correct=user_choice=="lower"and your_num<comp_num
-        if higher_correct or lower_correct:
-            print(f"You were right! The computer's number was {comp_num}")
-            
-            your_score= your_score+1
+    for i in range(NUM_ROUNDS):
+        print(f"round {i+1}")
+        #step1 
+        hidden_num=random.randint(1,100)
+        hint_num=random.randint(1,100)
+        print(f"Your number is {hint_num} ")
+        #step 2
+        choice=input("Do you think number is lower or higher from computer's number")
+        #step 3
+        """
+        hint_num >= hidden number =user= higher     correct 
+        hint_num<=hidden number =user =lower correct
+
+        hint_num >= hidden number =user=lower     in correct 
+        hint_num<=hidden number =user =higher  incorrect
+
+        """
+        higher_and_correct=choice== "higher" and hint_num > hidden_num
+        lower_and_correct=choice=="lower" and hint_num< hidden_num
+        if lower_and_correct or higher_and_correct:
+            print(f"Yeah you are right the computer number was {hidden_num}")
+            score+=1
         else:
-            print(f"Aww, that's incorrect. The computer's number was {comp_num}")
-    # 5  milestone scoring
-        print(f"Your score is now {your_score}")
-        print()
-    print("Thanks for playing!")
+            print(f"aww Its incorrect you should try again correct computer number was {hidden_num}")
+        print(f"the score is {score}")
+        print("")
+    print("Thanks for playing")
 
 
 
